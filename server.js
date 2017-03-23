@@ -43,7 +43,7 @@ app.get('/test-db',function(req,res){
         if(err){
             res.status(500).send(err.toString());
             }else{
-                res.send(JSON.strinify(result));
+                res.send(JSON.strinify(result.rows));
             }
         
     });
